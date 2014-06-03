@@ -4,6 +4,8 @@ Tricky3 Ajax Pagination
 
 Tricky3 ajax pagination plugin is a plugin that will load previous or next pages in ajax.Important this plugin only loads the html of the next or previous pages. To update content there is a sample callback, you can feel free to modify the callback function to suite your needs.
 
+The pagination wrapper should be unique on the page, you can wrap your paginations elements inside a div and add an id to it to make it unique.
+
 Version
 ----
 
@@ -31,11 +33,11 @@ You can load all pages either when document is ready or on a click event of a li
         
     
         //Example 1 : when document is ready
-		$(PaginationWrapperSelector).TrickyInfiniteScroll(options);
+		$(PaginationWrapperSelector).AjaxPagination(options);
         
         //Example 2 : On click event of a button
         $(LINKSELECTOR).click(function(){
-            $(PaginationWrapperSelector).TrickyInfiniteScroll(options);
+            $(PaginationWrapperSelector).AjaxPagination(options);
             return false;
         })
 
