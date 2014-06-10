@@ -15,7 +15,7 @@
 		var currentPage = $(opts.CurrentPageSelector, pagination);
 		var nextPageLink = $(opts.NextPageLinkSelector, pagination);
 		var previousPageLink = $(opts.PreviousPageLinkSelector, pagination);
-		var initialNextPageLink = this.nextPageLink;
+		var initialNextPageLink = nextPageLink;
 		
 				
 		var needToLoadOnlyNextPages = (previousPageLink.length == 0 && nextPageLink.length == 1);
